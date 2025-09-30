@@ -9,20 +9,18 @@
    --black:  #000000;
    --white: #ffffff;
    --light-grey: #F5F5F5;
-   --primary: #555427;
-   --primary-hover: #757443;
-   --secondary: #FBFAF3;
-   --dark-primary: #19190c;
-   --light-primary: #e9e8ce;
-   --mid-primary: #99987d;
+   --primary: #162035;
+   --primary-hover: #374768;
 
    // Spacing 
    --mobileGap: 20px;
    --desktopGap: 40px;
 
+   // Bos Shadow
    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-
-   --logo-height: 36px;
+   // Heights
+   --logo-height: 55px;
+   --logo-height-mobile: 40px;
    --top-header-height: 44px;
 }
