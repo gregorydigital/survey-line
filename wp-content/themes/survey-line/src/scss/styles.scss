@@ -1,0 +1,20 @@
+
+// Core files - including grid framework, resets, helpers and base styles
+@use './core/normalize';
+@use './core/base';
+@use './core/admin';
+
+// Theme files - including colours, typography, navs, header and footer 
+@use './theme/variables';
+@use './theme/animations';
+@use './theme/fonts';
+@use './theme/typography';
+@use './theme/buttons';
+@use './theme/forms';
+@use './theme/layout';
+@use './theme/header';
+@use './theme/footer';
+@use './theme/posts';
+@use './theme/error-page';
+
+// Block files - these get loaded in automaticaly through the Gulp file 

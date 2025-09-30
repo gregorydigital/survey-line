@@ -1,0 +1,204 @@
+@use '../../../src/scss/theme/index' as *;
+
+.faq-section {
+
+    background-color: var(--light-primary);
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    &__left {
+        overflow: hidden;
+        border-radius: 4px;
+        position: relative;
+        min-height: 200px;
+        padding: 20px;
+
+        &::before {
+            position: absolute;
+            z-index: 1;
+            content: '';
+            width: 100%;
+            height: 70%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(180deg,rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.46) 87%, rgba(0, 0, 0, 0) 100%);        
+        }
+
+        .btn {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-row {
+        border-top: 1px solid var(--primary);
+        padding: 24px 12px;
+        color: var(--primary);
+        background-color: transparent;
+        transition: background-color 0.3s ease-in;
+    }
+
+    .faq-question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 22px;
+        font: inherit;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        text-align: left;
+        font-weight: 500;
+        font-size: rem(22px);
+
+        h3 {
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 130%;
+            color: var(--primary);
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+            transform: rotate(90deg);
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .faq-question-number {
+        color: var(--primary);
+    }
+
+    .faq-toggle { 
+        transition: transform 200ms ease; 
+        height: 20px;
+        width: 20px;
+        flex-shrink: 0;
+        margin-top: 4px;
+    }
+
+    .faq-question[aria-expanded="true"] { 
+        h3 {
+            color: black;
+        }    
+
+        .faq-question-number {
+            color: black;
+        }
+
+        svg { 
+            transform: rotate(-90deg); 
+
+            path {
+                fill: black;
+            }
+        }
+    }
+ 
+    .faq-answer {
+        overflow: hidden;
+        height: 0;                 /* animated property */
+        transition: height 260ms ease;  /* slow it a touch for open */
+
+        p {
+            color: black;    
+            padding-top: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .faq-answer { transition: none; }
+    }
+
+    &.bg-grey {
+        background-color: #FAFAFA;
+    }
+
+    &.bg-white {
+        background-color: white;
+    }
+
+    &__content-top {
+        display: none;
+    }
+
+    &.hide-image {
+
+        .faq-section__left {
+            display: none;
+        }
+
+        .faq-section__inner {
+            display: block;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .faq-section__content-top {
+            display: block;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 30px;
+            color: white;
+        }
+
+        &.bg-grey,
+        &.bg-white {
+            .faq-section__content-top {
+                color: black;
+            }
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .faq-section {
+
+        .faq-question {
+            h3 {
+                font-size: 24px;
+            }
+        }
+
+        &__inner {
+            grid-template-columns: 350px 1fr;
+        }
+
+        &__left {
+            height: 500px;
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .faq-section {
+
+        &__inner {
+            grid-template-columns: 450px 1fr;
+            gap: 60px;
+        }
+
+        &__left {
+            padding: 30px;
+        }
+    }
+}

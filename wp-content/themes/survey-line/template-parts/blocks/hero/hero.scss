@@ -1,0 +1,76 @@
+@use '../../../src/scss/theme/index' as *;
+
+.hero {
+   overflow: hidden;
+   position: relative;
+
+   &:after {
+      z-index: 1;
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.3);
+   }
+
+   .container {
+      height: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+   }
+
+   &__content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      h1 {
+         font-size: rem(50px);
+         margin-bottom: 0;
+      }
+
+      p {
+         margin-bottom: 0;
+      }
+
+      a {
+         margin-top: 10px;
+         align-self: center;
+      }
+
+
+   }
+}
+
+
+@include breakpoint(md) {
+   .hero {
+
+      &:after {
+         width: 70%;
+         background: linear-gradient(90deg,rgba(000, 000, 000, 0.8) 0%, rgba(000, 000, 000, 0.36) 67%, rgba(0, 0, 0, 0) 100%);        
+      }
+
+      .container {
+         padding-top: 110px;
+         padding-bottom: 110px;
+      }
+
+      &__content {
+         
+         h1 {
+            font-size: rem(66px);
+         }
+
+         a {
+            align-self: flex-start;
+         }
+      }
+   }
+}

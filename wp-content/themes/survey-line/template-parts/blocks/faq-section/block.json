@@ -1,0 +1,27 @@
+{
+	"name": "acf/faq-section",
+	"title": "FAQ Section",
+	"description": "A faq section",
+	"category": "base-theme-block",
+	"keywords": [
+		"faq section questions"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "faq-section.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

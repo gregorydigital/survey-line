@@ -1,0 +1,69 @@
+@use './index' as *;
+
+.btn, .forminator-button  {
+    padding: 8px 28px;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: rem(16px);
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-hover);
+        color: white;
+    }
+
+    &--secondary {
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
+
+    &--black {
+        background-color: black;
+        color: white;
+
+        &:hover {
+            background-color: rgb(50,50,50);
+        }
+    }
+
+    &--white {
+        background-color: white;
+        color: var(--primary);
+
+        &:hover {
+            background-color: var(--light-primary);
+            color: var(--primary);
+        }
+    }
+
+    &--white-outline {
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+    }
+
+    &[target="_blank"] {
+        padding-right: 50px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            right: 14px;
+            top: 6px;
+            height: 20px;
+            width: 20px;
+            background-size: cover;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Interface / External_Link'%3E%3Cpath id='Vector' d='M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    }
+}

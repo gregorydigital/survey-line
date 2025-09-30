@@ -1,0 +1,27 @@
+{
+	"name": "acf/general-cards",
+	"title": "General Cards",
+	"description": "Display general cards with title text and image",
+	"category": "base-theme-block",
+	"keywords": [
+		"general card"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "general-cards.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

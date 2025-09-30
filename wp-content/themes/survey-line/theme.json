@@ -1,0 +1,44 @@
+{
+   "version": 3,
+   "settings": {
+      "defaultPalette": true,
+      "text": false,
+      "background": false,
+      "appearanceTools": false,
+      "styles": false,
+
+      "blockEditor": {
+         "blockPatterns": true
+      },
+
+      "layout": {
+         "contentSize": "100%",
+         "wideSize": "100%"
+      },
+
+      "color": {
+         "palette": [
+            {
+               "slug": "navy-blue",
+               "color": "#090D24",
+               "name": "Navy Blue"
+            },
+            {
+               "slug": "cobalt-blue",
+               "color": "#243A78",
+               "name": "Cobalt Blue"
+            },
+            {
+               "slug": "azure-blue",
+               "color": "#426BDE",
+               "name": "Azure Blue"
+            },
+            {
+               "slug": "light-grey",
+               "color": "#E5E5E5",
+               "name": "Light Grey"
+            }
+         ]
+      }
+   }
+}

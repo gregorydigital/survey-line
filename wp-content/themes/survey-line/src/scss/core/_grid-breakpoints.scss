@@ -1,0 +1,30 @@
+@use 'sass:map';
+@use './grid-variables' as *;
+
+// Responsive breakpoints mixin
+@mixin breakpoint($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+	@if map.has-key($mq-breakpoints, $mq-breakpoint) {
+		$mq-breakpoint: map.get($mq-breakpoints, $mq-breakpoint);
+	}
+
+	@media screen and (min-width: #{$mq-breakpoint}) {
+		@content;
+	}
+}
+
+// Mixin for max-width media queries
+@mixin max-width($breakpoint) {
+   @media (max-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+   }
+}
+
+// Mixin for between-breakpoints media queries
+@mixin between-breakpoints($min-breakpoint, $max-breakpoint, $mq-breakpoints: $breakpoints) {
+	$min-width: map.get($mq-breakpoints, $min-breakpoint);
+	$max-width: map.get($mq-breakpoints, $max-breakpoint);
+
+	@media screen and (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+		@content;
+	}
+}

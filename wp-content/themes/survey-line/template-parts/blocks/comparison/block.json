@@ -1,0 +1,27 @@
+{
+	"name": "acf/comparison",
+	"title": "Comparison section",
+	"description": "Display comparision section",
+	"category": "base-theme-block",
+	"keywords": [
+		"comparison section image"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "comparison.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+    "key": "group_67ed5be56bf6b",
+    "title": "Block: General Content",
+    "fields": [
+        {
+            "key": "field_67ed5be690bbc",
+            "label": "Content",
+            "name": "content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h4>Replace with your content<\/h4>\r\n\r\nof what goes here Lorem dolor sit amet description of what goes here, Lorem dolor sit amet description of what goes here\r\n\r\nLorem dolor sit amet description of what goes here, Lorem dolor sit amet description of what goes here Lorem dolor sit amet description of what goes here, Lorem dolor sit amet description of what goes here",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/general-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1743608939
+}

@@ -1,0 +1,25 @@
+{
+	"name": "acf/title-text",
+	"title": "Title Text",
+	"description": "Section with title and text",
+	"category": "base-theme-block",
+	"keywords": ["title text"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "title-text.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

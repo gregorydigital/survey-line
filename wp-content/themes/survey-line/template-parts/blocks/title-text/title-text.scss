@@ -1,0 +1,23 @@
+.title-text {
+
+    &.bg-grey {
+        background-color: #FAFAFA;
+    }
+
+    &.bg-black {
+        background-color: black;
+        color: white !important;
+
+    }
+
+    .title-text__inner {
+        max-width: 800px;
+    }
+
+    &.center {
+        .title-text__inner {
+            text-align: center;
+            margin: auto;
+        }
+    }
+}

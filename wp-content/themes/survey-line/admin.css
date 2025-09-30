@@ -1,0 +1,5 @@
+
+.post-type-blog .is-root-container, .post-type-insight .is-root-container {
+    max-width: 60vw;
+    margin: auto;
+}

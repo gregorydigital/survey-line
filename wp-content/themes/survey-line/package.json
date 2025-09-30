@@ -1,0 +1,40 @@
+{
+   "name": "transmission-agency-wp-base",
+   "version": "1.0.0",
+   "description": "Gulp configuration for WordPress theme with Sass compilation, JavaScript modules, and BrowserSync",
+   "main": "gulpfile.js",
+   "scripts": {
+      "start": "node --no-deprecation ./node_modules/.bin/gulp",
+      "watch": "node --no-deprecation ./node_modules/.bin/gulp watch",
+      "build": "node --no-deprecation ./node_modules/.bin/gulp build"
+   },
+   "devDependencies": {
+      "@babel/core": "^7.26.9",
+      "@babel/preset-env": "^7.26.9",
+      "babel-loader": "^9.0.0",
+      "babelify": "^10.0.0",
+      "browser-sync": "^3.0.3",
+      "browserify": "^17.0.1",
+      "eazy-logger": "^4.0.1",
+      "gulp": "^5.0.0",
+      "gulp-autoprefixer": "^9.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-dart-sass": "^1.1.0",
+      "gulp-jshint": "^2.1.0",
+      "gulp-rename": "^2.0.0",
+      "gulp-sourcemaps": "^2.6.5",
+      "gulp-terser": "^2.1.0",
+      "gulp-uglify": "^3.0.2",
+      "sass": "^1.80.4",
+      "vinyl-buffer": "^1.0.1",
+      "vinyl-source-stream": "^2.0.0"
+   },
+   "resolutions": {
+      "eazy-logger": "4.0.1"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "chokidar": "^4.0.3"
+   }
+}

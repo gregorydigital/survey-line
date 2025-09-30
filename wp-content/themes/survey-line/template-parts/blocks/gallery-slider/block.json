@@ -1,0 +1,25 @@
+{
+	"name": "acf/gallery-slider",
+	"title": "Gallery Slider",
+	"description": "Section of images in a slider and expand them",
+	"category": "base-theme-block",
+	"keywords": ["image slider carousel gallery"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "gallery-slider.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

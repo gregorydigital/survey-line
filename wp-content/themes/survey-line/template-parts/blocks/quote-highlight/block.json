@@ -1,0 +1,25 @@
+{
+	"name": "acf/quote-highlight",
+	"title": "Quote Highlight",
+	"description": "Display a highlighted quote",
+	"category": "base-theme-block",
+	"keywords": ["quote highlight"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "quote-highlight.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

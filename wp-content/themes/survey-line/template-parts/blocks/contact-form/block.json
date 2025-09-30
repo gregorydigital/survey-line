@@ -1,0 +1,27 @@
+{
+	"name": "acf/contact-form",
+	"title": "Contact Form",
+	"description": "Display contact form section",
+	"category": "base-theme-block",
+	"keywords": [
+		"image cta"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "contact-form.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

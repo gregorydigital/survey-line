@@ -1,0 +1,57 @@
+@use '../../../src/scss/theme/index' as *;
+
+.locations {
+    &__content {
+        max-width: 700px;
+        text-align: center;
+        margin: auto; 
+        margin-bottom: 40px; 
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    &__card {
+        background-color: var(--primary);
+        color: white;
+        transition: background-color 0.2s ease;
+        padding: 12px 24px;
+        text-align: center;
+
+        h3 {
+            margin: 0;
+            font-size: rem(22px);
+        }
+
+        &:hover {
+            background-color: var(--primary-hover);
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .locations {
+
+        &__content {
+            max-width: 700px;
+            text-align: center;
+            margin: auto; 
+            margin-bottom: 60px; 
+        }
+        
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .locations {
+        &__inner {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

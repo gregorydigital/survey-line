@@ -1,0 +1,88 @@
+@use '../../../src/scss/theme/index' as *;
+
+.services-section {
+
+    &__content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__inner {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    &__card {
+
+        overflow: hidden;
+        position: relative;
+        color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+        
+        h3 {
+            font-size: rem(38px);
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(60, 60, 60, 0.5);
+        }
+    }
+
+    &__card-content {
+        padding: 30px;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+
+        p {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .services-section {
+
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+        }
+
+        &__right {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__card {
+            h3 {
+                height: 100px;
+            }
+        }
+    }
+}
+
+@include breakpoint(md) {
+
+    .services-section {
+
+        &__inner {
+            grid-template-columns: 350px 1fr;
+        }
+    }
+}

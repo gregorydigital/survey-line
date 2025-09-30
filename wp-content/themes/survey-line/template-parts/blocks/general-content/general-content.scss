@@ -1,0 +1,8 @@
+@use '../../../src/scss/theme/index' as *;
+
+.is-root-container {
+   .acf-field {
+      max-width: 1000px;
+      margin: auto;
+   }
+}

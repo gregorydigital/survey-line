@@ -1,0 +1,53 @@
+@use "./index" as *;
+@use './buttons' as *;
+@use '../core/base';
+
+.padded {
+
+   &-default {
+      padding: 70px 0;
+
+      @include breakpoint(md) {
+         padding: 120px 0;
+      }
+   }
+
+   &-small {
+      padding: 50px 0;
+
+      @include breakpoint(md){
+         padding: 60px 0;
+      }
+   }
+
+   &-mid {
+      padding: 60px 0;
+
+      @include breakpoint(md){
+         padding: 80px 0;
+      }
+   }
+}
+
+iframe {
+   aspect-ratio: 16 / 9;
+   height: 100%;
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+body.wp-admin [data-aos],
+body.block-editor-page [data-aos] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.img-object-fit {
+   position: absolute;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   height: 100% !important;
+   width: 100%;
+}

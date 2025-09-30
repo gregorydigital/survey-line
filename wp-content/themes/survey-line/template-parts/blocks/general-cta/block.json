@@ -1,0 +1,27 @@
+{
+	"name": "acf/general-cta",
+	"title": "General CTA",
+	"description": "A general CTA block",
+	"category": "base-theme-block",
+	"keywords": [
+		"general cta call to action"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "general-cta.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

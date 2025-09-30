@@ -1,0 +1,77 @@
+@use '../../../src/scss/theme/index' as *;
+
+.process {
+
+    &__content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__card-image {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+
+    &__card-content {
+        padding: 40px 20px 20px 20px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: var(--light-primary);
+        position: relative;
+        text-align: center;
+        border-top: 2px solid var(--primary);
+
+        p {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__card-number {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        color: var(--primary);
+        font-size: 30px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@include breakpoint(sm) {
+    .process {
+
+        &__content {
+            margin-bottom: 60px;
+        }
+        
+        &__inner {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .process {
+        &__inner {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+        }
+    }
+}

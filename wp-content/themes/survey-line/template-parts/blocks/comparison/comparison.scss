@@ -1,0 +1,112 @@
+@use '../../../src/scss/theme/index' as *;
+
+.comparison {
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    &__content {
+        margin: auto;
+        max-width: 700px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__card {
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            position: relative;
+            display: inline-block;
+            padding-right: 40px;
+            margin-bottom: 0;
+
+            &:before {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 30px;
+                width: 30px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        &:first-of-type {
+            h5 {
+                &:before {
+                    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg fill='%231e9820ff' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='800px' height='800px' viewBox='0 0 342.508 342.508' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M171.254,0C76.837,0,0.003,76.819,0.003,171.248c0,94.428,76.829,171.26,171.251,171.26 c94.438,0,171.251-76.826,171.251-171.26C342.505,76.819,265.697,0,171.254,0z M245.371,136.161l-89.69,89.69 c-2.693,2.69-6.242,4.048-9.758,4.048c-3.543,0-7.059-1.357-9.761-4.048l-39.007-39.007c-5.393-5.398-5.393-14.129,0-19.521 c5.392-5.392,14.123-5.392,19.516,0l29.252,29.262l79.944-79.948c5.381-5.386,14.111-5.386,19.504,0 C250.764,122.038,250.764,130.769,245.371,136.161z'/%3E%3C/g%3E%3C/svg%3E");
+                }
+            }
+        }
+
+        &:last-of-type {
+            h5 {
+                &:before {
+                    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg width='800px' height='800px' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' sketch:type='MSPage'%3E%3Cg id='Icon-Set-Filled' sketch:type='MSLayerGroup' transform='translate(-570.000000, -1089.000000)' fill='%23b31a1aff'%3E%3Cpath d='M591.657,1109.24 C592.048,1109.63 592.048,1110.27 591.657,1110.66 C591.267,1111.05 590.633,1111.05 590.242,1110.66 L586.006,1106.42 L581.74,1110.69 C581.346,1111.08 580.708,1111.08 580.314,1110.69 C579.921,1110.29 579.921,1109.65 580.314,1109.26 L584.58,1104.99 L580.344,1100.76 C579.953,1100.37 579.953,1099.73 580.344,1099.34 C580.733,1098.95 581.367,1098.95 581.758,1099.34 L585.994,1103.58 L590.292,1099.28 C590.686,1098.89 591.323,1098.89 591.717,1099.28 C592.11,1099.68 592.11,1100.31 591.717,1100.71 L587.42,1105.01 L591.657,1109.24 L591.657,1109.24 Z M586,1089 C577.163,1089 570,1096.16 570,1105 C570,1113.84 577.163,1121 586,1121 C594.837,1121 602,1113.84 602,1105 C602,1096.16 594.837,1089 586,1089 L586,1089 Z' id='cross-circle' sketch:type='MSShapeGroup'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                }
+            }
+        }
+    }
+
+    
+    &__card-top {
+        padding: 20px;
+        background-color: var(--light-primary);
+    }
+
+    &__card-bottom {
+        padding: 20px;
+        background-color: var(--light-primary);
+
+        flex-grow: 1;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+    
+
+    &__card-image {
+        position: relative;
+        overflow: hidden;
+        height: 240px; 
+        border-radius: 2px;
+    }
+}
+
+@include breakpoint(sm) {
+    .comparison {
+
+        &__content {
+            margin-bottom: 60px;
+        }
+
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin: 0 60px;
+        }
+
+        &__card-image {
+            height: 300px; 
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .comparison {
+
+        &__inner {
+            gap: 100px;
+            margin: 0 120px;
+        }
+    }
+}

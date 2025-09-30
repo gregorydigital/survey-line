@@ -1,0 +1,27 @@
+{
+	"name": "acf/general-content",
+	"title": "General Content",
+	"description": "Display general content, good for policy pages",
+	"category": "base-theme-block",
+	"keywords": [
+		"general content"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "general-content.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

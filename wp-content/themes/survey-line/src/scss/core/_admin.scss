@@ -1,0 +1,95 @@
+@use './index' as *;
+
+#tinymce {
+   padding: 20px 15px;
+}
+
+.editor-styles-wrapper {
+   padding: 20px;
+}
+
+.components-circular-option-picker .components-circular-option-picker__custom-clear-wrapper {
+   justify-content: flex-start;
+}
+
+.editor-styles-wrapper {
+   .editor-visual-editor__post-title-wrapper {
+      position: relative;
+      border: 1px solid #ddd;
+      margin: 10px 0 30px !important;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      background: var(--ultima-cream);
+
+      h1 {
+         padding: 0;
+         margin: 0;
+         font-size: rem(24px);
+      }
+   }
+
+   .is-desktop-preview {
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+   }
+}
+
+/* General block width - might be too broad */
+.wp-block {
+   max-width: 100% !important;
+   width: 100% !important
+}
+
+/* Target core block divs specifically within the editor content area */
+.editor-styles-wrapper .is-root-container > div.wp-block:not(.acf-block-component) {
+   max-width: 100% !important;
+   width: 100% !important;
+}
+
+/* Force full width for specific core layout block divs */
+.editor-styles-wrapper .is-root-container > div.wp-block-group {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-columns {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-paragraph {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-heading {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-list {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-quote {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-separator {
+   max-width: none !important;
+   width: 100% !important;
+}
+
+.editor-styles-wrapper .is-root-container > div.wp-block-spacer {
+   max-width: none !important;
+   width: auto !important;
+}
+
+.wp-core-ui {
+   font-size: rem(14px) !important;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}

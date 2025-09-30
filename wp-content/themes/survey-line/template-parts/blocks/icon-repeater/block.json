@@ -1,0 +1,25 @@
+{
+	"name": "acf/icon-repeater",
+	"title": "Icon repeater",
+	"description": "Block with icons on one or two rows",
+	"category": "base-theme-block",
+	"keywords": ["icon repeater"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "icon-repeater.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

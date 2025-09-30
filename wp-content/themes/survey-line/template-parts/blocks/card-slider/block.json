@@ -1,0 +1,25 @@
+{
+	"name": "acf/card-slider",
+	"title": "Card Slider",
+	"description": "A section showing image text cards in a slider",
+	"category": "base-theme-block",
+	"keywords": ["card slider carousel"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "card-slider.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

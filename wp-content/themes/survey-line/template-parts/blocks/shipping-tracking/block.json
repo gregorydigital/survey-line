@@ -1,0 +1,25 @@
+{
+	"name": "acf/shipping-tracking",
+	"title": "Shipping Tracking",
+	"description": "A block showing customer shipping tracking",
+	"category": "base-theme-block",
+	"keywords": ["hero"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "shipping-tracking.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

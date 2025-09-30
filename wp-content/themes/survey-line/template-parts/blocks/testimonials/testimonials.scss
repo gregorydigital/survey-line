@@ -1,0 +1,79 @@
+@use '../../../src/scss/theme/index' as *;
+
+.testimonials {
+
+    &__content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .ti-widget.ti-goog .ti-review-item {
+        .ti-inner {
+            background-color: var(--secondary) !important;
+            border-radius: 2px !important;
+        }
+    }
+  
+    @include max-width(sm) {
+        .ti-review-item {
+            &:nth-of-type(n+5) {
+                display: none;
+            }
+        }
+    }
+
+    &__card {
+        border-radius: 4px;
+        padding: 20px;
+        background-color: var(--secondary);
+
+        p {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        @include max-width(sm) {
+            &:nth-of-type(n+5) {
+                display: none;
+            }
+        }
+
+        .testimonial-name {
+            color: rgba(0, 0, 0, 0.56);
+        }
+
+        img {
+            height: 34px;
+            width: 34px;
+        }
+    }
+
+    &__card-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    &__links {
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@include breakpoint(sm) {
+    .testimonials {
+        .ti-review-item {
+            &:nth-of-type(n+9) {
+                display: none;
+            }
+        }
+    }
+}

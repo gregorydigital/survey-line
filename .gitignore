@@ -1,0 +1,46 @@
+# -------------------------
+# WordPress Core
+# -------------------------
+/wp-admin/
+/wp-includes/
+/index.php
+
+# -------------------------
+# Local Uploads & Cache
+# -------------------------
+/wp-content/uploads/
+/wp-content/plugins/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/languages/
+/wp-content/themes/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# -------------------------
+# Theme: ignore build artifacts
+# -------------------------
+# Node
+wp-content/themes/*/node_modules/
+wp-content/themes/*/package-lock.json
+wp-content/themes/*/yarn.lock
+
+# Build output (dist, compiled assets)
+wp-content/themes/*/src/**/*.map
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Config files
+# -------------------------
+wp-config.php
+.env

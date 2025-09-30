@@ -1,0 +1,28 @@
+@use './index' as *;
+
+:root {
+
+   // Fonts 
+   --primaryFont: "Jost", sans-serif;
+   
+   // Theme colours
+   --black:  #000000;
+   --white: #ffffff;
+   --light-grey: #F5F5F5;
+   --primary: #555427;
+   --primary-hover: #757443;
+   --secondary: #FBFAF3;
+   --dark-primary: #19190c;
+   --light-primary: #e9e8ce;
+   --mid-primary: #99987d;
+
+   // Spacing 
+   --mobileGap: 20px;
+   --desktopGap: 40px;
+
+   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+   --logo-height: 36px;
+   --top-header-height: 44px;
+}

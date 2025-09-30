@@ -1,0 +1,27 @@
+{
+	"name": "acf/review-slider",
+	"title": "Review Slider",
+	"description": "Block dispalying reviews as a slider",
+	"category": "base-theme-block",
+	"keywords": [
+		"review reviews slider"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "review-slider.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

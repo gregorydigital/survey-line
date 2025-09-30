@@ -1,0 +1,56 @@
+@use '../../../src/scss/theme/index' as *;
+
+.shipping-tracking {
+
+    &__content {
+        max-width: 700px;
+    }
+
+    .shipping-tracking-search {
+         margin-top: 60px;
+    }
+    
+    input {
+        outline: none;
+        padding: 6px 10px;
+        border: 1px solid var(--primary);
+    }
+
+    #ship-results {
+        margin-top: 20px;
+    }
+
+    .ship-row {
+        padding: 20px;
+        border: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            align-self: flex-start;
+        }
+    }
+
+}
+
+@include breakpoint(md) {
+    .shipping-tracking {
+
+        .ship-row {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+}

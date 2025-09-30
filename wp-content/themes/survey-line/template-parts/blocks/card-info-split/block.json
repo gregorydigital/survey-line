@@ -1,0 +1,25 @@
+{
+	"name": "acf/card-info-split",
+	"title": "Card Info Split",
+	"description": "Card with extra insfor split screen",
+	"category": "base-theme-block",
+	"keywords": ["split section card info"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "card-info-split.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

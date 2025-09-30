@@ -1,0 +1,6 @@
+// Function to change pixels into rems for better typographic scaling 
+@use 'sass:math' as math;
+
+@function rem($size) {
+	@return calc($size / 16px * 1rem);
+}

@@ -1,0 +1,27 @@
+{
+	"name": "acf/testimonials",
+	"title": "Testimonials",
+	"description": "A testimonial section",
+	"category": "base-theme-block",
+	"keywords": [
+		"testimonials reviews"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "testimonials.php"
+	},
+	"supports": {
+		"align": false,
+		"html": false,
+		"jsx": false,
+		"mode": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}
