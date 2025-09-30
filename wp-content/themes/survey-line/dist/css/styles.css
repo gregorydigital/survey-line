@@ -1644,8 +1644,9 @@ body.block-editor-page [data-aos] {
 }
 .header__main .header-logo-container .header__logo {
   display: block;
-  max-height: var(--logo-height);
-  transition: max-height 0.3s ease;
+}
+.header__main .header-logo-container .header__logo img {
+  height: var(--logo-height);
 }
 .header__main-inner {
   display: flex;

@@ -28,8 +28,9 @@
 
             .header__logo {
                 display: block;
-                max-height: var(--logo-height);
-                transition: max-height 0.3s ease;
+                img {
+                    height: var(--logo-height);
+                }
             }
         }
     }
