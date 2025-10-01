@@ -23,7 +23,7 @@
       <?php endif; ?>
          <div class="home-hero__inner" data-aos="fade-up">
             <?php if(!empty($title)): ?>
-               <h1><?php echo esc_html($title); ?>HI</h1>
+               <h1><?php echo esc_html($title); ?></h1>
             <?php endif; ?>
             <?php if(!empty($text)): ?>
                <p><?php echo esc_html($text); ?></p>
