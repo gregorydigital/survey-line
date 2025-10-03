@@ -90,7 +90,7 @@ add_filter('acf/prepare_field/name=mega_menu_list', function( $field ) {
 function my_custom_login_logo() { ?>
     <style type="text/css">
         #login h1 a {
-            background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg');
+            background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png');
             height: 100px;
             width: 300px;
             background-size: contain;
