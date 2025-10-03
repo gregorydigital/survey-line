@@ -85,3 +85,30 @@ add_filter('acf/prepare_field/name=mega_menu_list', function( $field ) {
 
     return $field;
 });
+
+// Change the WordPress login logo
+function my_custom_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a {
+            background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg');
+            height: 100px;
+            width: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action('login_enqueue_scripts', 'my_custom_login_logo');
+
+// Change login logo link to your site instead of WordPress.org
+function my_custom_login_url() {
+    return home_url();
+}
+add_filter('login_headerurl', 'my_custom_login_url');
+
+// Change login logo title text
+function my_custom_login_title() {
+    return get_bloginfo('name');
+}
+add_filter('login_headertext', 'my_custom_login_title');
